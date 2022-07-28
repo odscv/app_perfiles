@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-07-01 14:37:37.313688",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "nombre_completo",
+  "metodolog\u00eda",
+  "categorias",
+  "nombre_categoria",
+  "oficinas",
+  "nombre_oficina",
+  "fecha_inicio",
+  "fecha_cierre",
+  "descripcion",
+  "visibilidad",
+  "column_break_10",
+  "requisitos"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "C\u00f3digo del curso",
+   "options": "CUR-"
+  },
+  {
+   "fieldname": "nombre_completo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre completo del curso",
+   "reqd": 1
+  },
+  {
+   "fieldname": "metodolog\u00eda",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Metodolog\u00eda",
+   "options": "EM - #EnMarcha\nEMD - #EnMarchaDigital\nICSN - Iniciando con su Negocio\nCCSN - Creciendo con su Negocio\nMDP - Desarrollo de Proveedores\nNo aplica",
+   "reqd": 1
+  },
+  {
+   "fieldname": "categorias",
+   "fieldtype": "Link",
+   "label": "C\u00f3digo de la categor\u00eda",
+   "options": "Categoria",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "categorias.nombre",
+   "fieldname": "nombre_categoria",
+   "fieldtype": "Read Only",
+   "label": "Nombre de la categor\u00eda"
+  },
+  {
+   "fieldname": "oficinas",
+   "fieldtype": "Link",
+   "label": "C\u00f3digo de la oficina",
+   "options": "Oficina",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "oficinas.oficina_pais",
+   "fieldname": "nombre_oficina",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Nombre de la oficina"
+  },
+  {
+   "fieldname": "fecha_inicio",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha de inicio del curso",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha_cierre",
+   "fieldtype": "Date",
+   "label": "Fecha de finalizaci\u00f3n del curso"
+  },
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Descripci\u00f3n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "visibilidad",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Visibilidad del curso",
+   "options": "Mostrar\nOcultar",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "requisitos",
+   "fieldtype": "Text Editor",
+   "label": "Requisitos para postular"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-28 17:22:51.773179",
+ "modified_by": "Administrator",
+ "module": "ODSPerfiles",
+ "name": "Curso",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

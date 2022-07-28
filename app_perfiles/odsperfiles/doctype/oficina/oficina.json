@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-07-06 16:09:19.618060",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "oficina_pais",
+  "pais",
+  "column_break_4",
+  "descripcion"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "C\u00f3digo de la oficina",
+   "options": "UNDP-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "oficina_pais",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "Nombre de la oficina",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pais",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Seleccione un pa\u00eds",
+   "options": "Argentina\nBolivia\nBrasil\nChile\nColombia\nCosta Rica\nCuba\nEcuador\nEl Salvador\nGuayana Francesa\nGranada\nGuatemala\nGuayana\nHait\u00ed\nHonduras\nJamaica\nM\u00e9xico\nNicaragua\nParaguay\nPanam\u00e1\nPer\u00fa\nPuerto Rico\nRep\u00fablica Dominicana\nSurinam\nUruguay\nVenezuela",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Descripci\u00f3n",
+   "reqd": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-28 17:22:29.239202",
+ "modified_by": "Administrator",
+ "module": "ODSPerfiles",
+ "name": "Oficina",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "oficina_pais",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

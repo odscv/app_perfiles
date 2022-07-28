@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-07-07 16:03:00.461380",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "titulo",
+  "institucion",
+  "horas",
+  "column_break_5",
+  "fecha",
+  "descripcion"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Codigo",
+   "options": "CON-"
+  },
+  {
+   "fieldname": "titulo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Titulo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "institucion",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Instituci\u00f3n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "horas",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Horas academicas",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha",
+   "reqd": 1
+  },
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Small Text",
+   "label": "Descripci\u00f3n"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-28 17:20:37.963407",
+ "modified_by": "Administrator",
+ "module": "ODSPerfiles",
+ "name": "Conocimiento",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

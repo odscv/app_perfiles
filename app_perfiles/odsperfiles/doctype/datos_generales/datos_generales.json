@@ -1,0 +1,187 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-07-01 15:18:07.548413",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "numero_id",
+  "nombres",
+  "nombre_preferido",
+  "apellidos",
+  "nacionalidad",
+  "fecha_nacimiento",
+  "sexo",
+  "estado_civil",
+  "num_dependientes",
+  "salto_columna1",
+  "ver_foto",
+  "foto_postulante",
+  "edad",
+  "nivel_estudios",
+  "email",
+  "pais",
+  "ciudad",
+  "direccion",
+  "telefono_movil"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "C\u00f3digo del postulante",
+   "options": "POS-"
+  },
+  {
+   "fieldname": "numero_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "N\u00famero de ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "nombres",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombres",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nombre_preferido",
+   "fieldtype": "Data",
+   "label": "Nombre preferido",
+   "reqd": 1
+  },
+  {
+   "fieldname": "apellidos",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Apellidos",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nacionalidad",
+   "fieldtype": "Data",
+   "label": "Nacionalidad",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha_nacimiento",
+   "fieldtype": "Date",
+   "label": "Fecha de nacimiento",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sexo",
+   "fieldtype": "Select",
+   "label": "Sexo",
+   "options": "Femenino\nMasculino",
+   "reqd": 1
+  },
+  {
+   "fieldname": "estado_civil",
+   "fieldtype": "Select",
+   "label": "Estado civil",
+   "options": "Soltero(a)\nCasado(a)\nDivorciado(a)\nViudo(a)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "num_dependientes",
+   "fieldtype": "Int",
+   "label": "N\u00famero de dependientes"
+  },
+  {
+   "fieldname": "salto_columna1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ver_foto",
+   "fieldtype": "Image",
+   "label": "Fotograf\u00eda"
+  },
+  {
+   "fieldname": "foto_postulante",
+   "fieldtype": "Attach Image",
+   "label": "Adjuntar fotograf\u00eda",
+   "reqd": 1
+  },
+  {
+   "fieldname": "edad",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Edad",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "nivel_estudios",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Nivel formativo",
+   "options": "Doctorado\nCuarto nivel-posgrado\nTercer nivel\nBachiller",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "E-mail personal"
+  },
+  {
+   "fieldname": "pais",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Seleccione un pa\u00eds",
+   "options": "Argentina\nBolivia\nBrasil\nChile\nColombia\nCosta Rica\nCuba\nEcuador\nEl Salvador\nGuayana Francesa\nGranada\nGuatemala\nGuayana\nHait\u00ed\nHonduras\nJamaica\nM\u00e9xico\nNicaragua\nParaguay\nPanam\u00e1\nPer\u00fa\nPuerto Rico\nRep\u00fablica Dominicana\nSurinam\nUruguay\nVenezuela",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ciudad",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ciudad",
+   "reqd": 1
+  },
+  {
+   "fieldname": "direccion",
+   "fieldtype": "Data",
+   "label": "Direcci\u00f3n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "telefono_movil",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tel\u00e9fono m\u00f3vil"
+  }
+ ],
+ "image_field": "foto_postulante",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-28 17:18:58.362748",
+ "modified_by": "Administrator",
+ "module": "ODSPerfiles",
+ "name": "Datos Generales",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

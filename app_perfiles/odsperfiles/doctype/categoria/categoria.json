@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-07-01 14:39:49.656152",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "nombre",
+  "categoria_padre",
+  "numero_id",
+  "column_break_5",
+  "descripcion"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "C\u00f3digo de la categor\u00eda",
+   "options": "CAT-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre de la categor\u00eda",
+   "reqd": 1
+  },
+  {
+   "fieldname": "categoria_padre",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Categor\u00eda padre",
+   "options": "Formaci\u00f3n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "numero_id",
+   "fieldtype": "Int",
+   "label": "N\u00famero ID de la categor\u00eda",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Descripci\u00f3n",
+   "reqd": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-28 17:21:30.132891",
+ "modified_by": "Administrator",
+ "module": "ODSPerfiles",
+ "name": "Categoria",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "nombre",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

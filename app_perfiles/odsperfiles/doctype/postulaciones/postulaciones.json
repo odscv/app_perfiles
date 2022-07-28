@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-07-15 06:30:19.391015",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "codigocurso",
+  "curso",
+  "sec001"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Codigo"
+  },
+  {
+   "fieldname": "codigocurso",
+   "fieldtype": "Link",
+   "label": "Codigo curso",
+   "options": "Curso"
+  },
+  {
+   "fetch_from": "curso.nombre_completo",
+   "fieldname": "curso",
+   "fieldtype": "Read Only",
+   "label": "Curso"
+  },
+  {
+   "fieldname": "sec001",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-28 17:24:33.489049",
+ "modified_by": "Administrator",
+ "module": "ODSPerfiles",
+ "name": "Postulaciones",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

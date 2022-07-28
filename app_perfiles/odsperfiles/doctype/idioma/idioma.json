@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-07-07 16:11:36.745660",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "idioma",
+  "lectura",
+  "escrito",
+  "column_break_6",
+  "hablado",
+  "descripcion"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "C\u00f3digo del idioma",
+   "options": "IDI-"
+  },
+  {
+   "fieldname": "idioma",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre del idioma",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lectura",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Lectura",
+   "options": "Principiante\nIntermedio\nAvanzado",
+   "reqd": 1
+  },
+  {
+   "fieldname": "escrito",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Escrito",
+   "options": "Principiante\nIntermedio\nAvanzado",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hablado",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Hablado",
+   "options": "Principiante\nIntermedio\nAvanzado",
+   "reqd": 1
+  },
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Small Text",
+   "label": "Descripci\u00f3n"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-28 17:23:11.880055",
+ "modified_by": "Administrator",
+ "module": "ODSPerfiles",
+ "name": "Idioma",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
