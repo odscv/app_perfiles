@@ -40,7 +40,7 @@ def login(usr, pwd):
 		frappe.clear_messages()
 		frappe.local.response["message"] = {
 			"success_key":0,
-			"message":"Authentication Error!"
+			"message":"Authentication Error!!"
 		}
 
 		return
