@@ -6,7 +6,14 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "encabezado_1",
   "naming_series",
+  "nombres_id",
+  "column_break_3",
+  "encabezado_2",
+  "numero_id_id",
+  "ciudad_id",
+  "section_break_4",
   "idioma",
   "lectura",
   "escrito",
@@ -22,10 +29,12 @@
    "options": "IDI-"
   },
   {
+   "default": "Ninguno",
    "fieldname": "idioma",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Nombre del idioma",
+   "options": "Ninguno\nAlban\u00e9s\nAlem\u00e1n\n\u00c1rabe\nChino\nEspa\u00f1ol\nFranc\u00e9s\nIndost\u00e1nico (Hindi-Urdu)\nIngl\u00e9s\nItaliano\nMalayo\nNeerland\u00e9s\nPersa\nPortugu\u00e9s\nQuechua\nRumano-Moldavo\nRuso\nSerbo-Croata\nSesoto\nSetsuana\nSuajili\nT\u00e1mil\nTurco",
    "reqd": 1
   },
   {
@@ -60,11 +69,47 @@
    "fieldname": "descripcion",
    "fieldtype": "Small Text",
    "label": "Descripci\u00f3n"
+  },
+  {
+   "fieldname": "numero_id_id",
+   "fieldtype": "Link",
+   "label": "N\u00famero de ID",
+   "options": "Datos Generales"
+  },
+  {
+   "fetch_from": "numero_id_id.nombrecompleto",
+   "fieldname": "nombres_id",
+   "fieldtype": "Read Only",
+   "label": "Nombres"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "numero_id_id.ciudad",
+   "fieldname": "ciudad_id",
+   "fieldtype": "Read Only",
+   "label": "Ciudad"
+  },
+  {
+   "fieldname": "encabezado_1",
+   "fieldtype": "Heading",
+   "label": "Datos del participante"
+  },
+  {
+   "fieldname": "encabezado_2",
+   "fieldtype": "Heading",
+   "label": "."
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-28 17:23:11.880055",
+ "modified": "2022-08-04 10:16:58.603800",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Idioma",

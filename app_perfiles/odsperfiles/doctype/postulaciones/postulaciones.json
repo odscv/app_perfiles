@@ -6,6 +6,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "encabezado_1",
   "naming_series",
   "codigocurso",
   "curso",
@@ -15,12 +16,12 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
-   "label": "Codigo"
+   "label": "C\u00f3digo de postulaciones"
   },
   {
    "fieldname": "codigocurso",
    "fieldtype": "Link",
-   "label": "Codigo curso",
+   "label": "C\u00f3digo del curso",
    "options": "Curso"
   },
   {
@@ -32,11 +33,16 @@
   {
    "fieldname": "sec001",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "encabezado_1",
+   "fieldtype": "Heading",
+   "label": "Datos del participante"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-28 17:24:33.489049",
+ "modified": "2022-08-03 22:53:20.529584",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Postulaciones",

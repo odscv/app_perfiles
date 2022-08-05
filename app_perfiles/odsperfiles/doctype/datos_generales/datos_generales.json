@@ -7,26 +7,29 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "encabezado_1",
   "naming_series",
   "numero_id",
   "nombres",
   "nombre_preferido",
   "apellidos",
-  "nacionalidad",
+  "nombrecompleto",
   "fecha_nacimiento",
+  "edad",
   "sexo",
   "estado_civil",
   "num_dependientes",
   "salto_columna1",
+  "encabezado_2",
   "ver_foto",
   "foto_postulante",
-  "edad",
-  "nivel_estudios",
   "email",
+  "telefono_movil",
+  "nivel_estudios",
   "pais",
+  "nacionalidad",
   "ciudad",
-  "direccion",
-  "telefono_movil"
+  "direccion"
  ],
  "fields": [
   {
@@ -114,10 +117,10 @@
    "fieldtype": "Int",
    "in_list_view": 1,
    "label": "Edad",
-   "non_negative": 1,
-   "read_only": 1
+   "non_negative": 1
   },
   {
+   "default": "Tercer nivel",
    "fieldname": "nivel_estudios",
    "fieldtype": "Select",
    "in_list_view": 1,
@@ -157,12 +160,29 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Tel\u00e9fono m\u00f3vil"
+  },
+  {
+   "fieldname": "nombrecompleto",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Nombre completo",
+   "read_only": 1
+  },
+  {
+   "fieldname": "encabezado_1",
+   "fieldtype": "Heading",
+   "label": "Datos del participante"
+  },
+  {
+   "fieldname": "encabezado_2",
+   "fieldtype": "Heading",
+   "label": "."
   }
  ],
  "image_field": "foto_postulante",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-28 17:18:58.362748",
+ "modified": "2022-08-03 22:50:08.323126",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Datos Generales",
@@ -181,6 +201,7 @@
    "write": 1
   }
  ],
+ "search_fields": "numero_id,nombrecompleto,ciudad",
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

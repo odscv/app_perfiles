@@ -6,7 +6,14 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "encabezado_1",
   "naming_series",
+  "nombres_fo",
+  "column_break_4",
+  "encabezado_2",
+  "numero_id_fo",
+  "ciudad_id",
+  "section_break_8",
   "titulo",
   "institucion",
   "nivel_formativo",
@@ -36,6 +43,7 @@
    "reqd": 1
   },
   {
+   "default": "Tercer nivel",
    "fieldname": "nivel_formativo",
    "fieldtype": "Select",
    "in_list_view": 1,
@@ -58,11 +66,47 @@
    "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Descripci\u00f3n"
+  },
+  {
+   "fieldname": "encabezado_1",
+   "fieldtype": "Heading",
+   "label": "Datos del participante"
+  },
+  {
+   "fetch_from": "numero_id_fo.nombrecompleto",
+   "fieldname": "nombres_fo",
+   "fieldtype": "Read Only",
+   "label": "Nombres"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "encabezado_2",
+   "fieldtype": "Heading",
+   "label": "."
+  },
+  {
+   "fieldname": "numero_id_fo",
+   "fieldtype": "Link",
+   "label": "N\u00famero de ID",
+   "options": "Datos Generales"
+  },
+  {
+   "fetch_from": "numero_id_fo.ciudad",
+   "fieldname": "ciudad_id",
+   "fieldtype": "Read Only",
+   "label": "Ciudad"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-28 17:23:42.224839",
+ "modified": "2022-08-04 09:46:59.667770",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Formacion",

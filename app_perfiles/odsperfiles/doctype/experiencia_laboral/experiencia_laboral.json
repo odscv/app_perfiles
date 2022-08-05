@@ -6,14 +6,21 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "encabezado_1",
   "codigo",
+  "nombres_el",
+  "column_break_1",
+  "encabezado_2",
+  "numero_id_el",
+  "ciudad_el",
+  "section_break_8",
   "tipo",
   "posicion",
   "empresa",
   "ubicacion",
   "fecha_ingreso",
-  "column_break_9",
   "cargo_actual",
+  "column_break_15",
   "fecha_salida",
   "meses",
   "personas_acargo",
@@ -61,10 +68,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "column_break_9",
-   "fieldtype": "Column Break"
-  },
-  {
    "default": "0",
    "fieldname": "cargo_actual",
    "fieldtype": "Check",
@@ -94,11 +97,51 @@
    "in_list_view": 1,
    "label": "Descripci\u00f3n",
    "reqd": 1
+  },
+  {
+   "fieldname": "encabezado_1",
+   "fieldtype": "Heading",
+   "label": "Datos del participante"
+  },
+  {
+   "fetch_from": "numero_id_el.nombrecompleto",
+   "fieldname": "nombres_el",
+   "fieldtype": "Read Only",
+   "label": "Nombres"
+  },
+  {
+   "fieldname": "encabezado_2",
+   "fieldtype": "Heading",
+   "label": "."
+  },
+  {
+   "fieldname": "numero_id_el",
+   "fieldtype": "Link",
+   "label": "N\u00famero de ID",
+   "options": "Datos Generales"
+  },
+  {
+   "fetch_from": "numero_id_el.ciudad",
+   "fieldname": "ciudad_el",
+   "fieldtype": "Read Only",
+   "label": "Ciudad"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-28 17:24:13.290836",
+ "modified": "2022-08-04 10:03:57.145026",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Experiencia Laboral",

@@ -6,11 +6,18 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "encabezado_1",
   "naming_series",
+  "nombres_co",
+  "column_break_4",
+  "encabezado_2",
+  "numero_id_co",
+  "ciudad_id",
+  "section_break_8",
   "titulo",
   "institucion",
   "horas",
-  "column_break_5",
+  "column_break_12",
   "fecha",
   "descripcion"
  ],
@@ -18,7 +25,7 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
-   "label": "Codigo",
+   "label": "C\u00f3digo del conocimiento ",
    "options": "CON-"
   },
   {
@@ -43,10 +50,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "column_break_5",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "fecha",
    "fieldtype": "Date",
    "in_list_view": 1,
@@ -57,11 +60,51 @@
    "fieldname": "descripcion",
    "fieldtype": "Small Text",
    "label": "Descripci\u00f3n"
+  },
+  {
+   "fieldname": "encabezado_1",
+   "fieldtype": "Heading",
+   "label": "Datos del participante"
+  },
+  {
+   "fetch_from": "numero_id_co.nombrecompleto",
+   "fieldname": "nombres_co",
+   "fieldtype": "Read Only",
+   "label": "Nombres"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "encabezado_2",
+   "fieldtype": "Heading",
+   "label": "."
+  },
+  {
+   "fieldname": "numero_id_co",
+   "fieldtype": "Link",
+   "label": "N\u00famero de ID",
+   "options": "Datos Generales"
+  },
+  {
+   "fetch_from": "numero_id_co.nombrecompleto",
+   "fieldname": "ciudad_id",
+   "fieldtype": "Read Only",
+   "label": "Ciudad"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-28 17:20:37.963407",
+ "modified": "2022-08-04 10:06:06.965253",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Conocimiento",
