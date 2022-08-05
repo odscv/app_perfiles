@@ -102,7 +102,9 @@ def registro(nombres,apellidos,email, redirect_to):
 		frappe.db.sql(""" UPDATE tabUser 
 				set user_type ='System User',
 				owner='Administrator',
-				modified_by='Administrator'
+				modified_by='Administrator',
+				role_profile_name='Postulaciones',
+				module_profile='ModulosPostulantes'
 				WHERE email = %(email)s """, values=values, as_dict=1)
 		#if redirect_to:
 		#    frappe.cache().hset("redirect_after_login", user.name, redirect_to)
@@ -167,7 +169,9 @@ def update_password(new_password, logout_all_sessions=0, key=None, old_password=
 	values = {'user': user}
 	frappe.db.sql(""" UPDATE tabUser 
 				set user_type ='System User',
-				owner='Administrator'
+				owner='Guest',
+				role_profile_name='Postulaciones',
+				module_profile='ModulosPostulantes'
 				WHERE email = %(user)s """, values=values, as_dict=1)
 	
 	if user_doc.user_type == "System User":
@@ -175,6 +179,13 @@ def update_password(new_password, logout_all_sessions=0, key=None, old_password=
 	else:
 		return redirect_url if redirect_url else "/"
 
+def handle_password_test_fail(result):
+	suggestions = result["feedback"]["suggestions"][0] if result["feedback"]["suggestions"] else ""
+	warning = result["feedback"]["warning"] if "warning" in result["feedback"] else ""
+	suggestions += (
+		"<br>" + _("Hint: Include symbols, numbers and capital letters in the password") + "<br>"
+	)
+	frappe.throw(" ".join([_("Invalid Password:"), warning, suggestions]))
 
 @frappe.whitelist(allow_guest=True)
 def test_password_strength(new_password, key=None, old_password=None, user_data=None):
