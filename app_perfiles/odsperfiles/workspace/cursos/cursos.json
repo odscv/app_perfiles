@@ -1,7 +1,7 @@
 {
  "category": "Modules",
  "charts": [],
- "creation": "2022-08-03 23:42:20.026672",
+ "creation": "2022-08-05 10:30:16.996299",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
  "docstatus": 0,
@@ -13,7 +13,7 @@
  "is_standard": 1,
  "label": "Cursos",
  "links": [],
- "modified": "2022-08-03 23:42:20.026672",
+ "modified": "2022-08-05 10:30:16.996299",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Cursos",

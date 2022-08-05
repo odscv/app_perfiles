@@ -141,7 +141,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-04 10:03:57.145026",
+ "modified": "2022-08-05 10:51:22.379935",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Experiencia Laboral",
@@ -160,7 +160,9 @@
    "write": 1
   }
  ],
+ "search_fields": "tipo,posicion",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "posicion",
  "track_changes": 1
 }

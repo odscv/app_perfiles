@@ -109,7 +109,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-04 10:16:58.603800",
+ "modified": "2022-08-05 10:52:39.347705",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Idioma",
@@ -128,7 +128,9 @@
    "write": 1
   }
  ],
+ "search_fields": "idioma",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "idioma",
  "track_changes": 1
 }

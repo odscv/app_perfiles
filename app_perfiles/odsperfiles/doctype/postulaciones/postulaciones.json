@@ -42,7 +42,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-03 22:53:20.529584",
+ "modified": "2022-08-05 10:49:22.771122",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Postulaciones",
@@ -61,6 +61,7 @@
    "write": 1
   }
  ],
+ "search_fields": "curso",
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

@@ -29,45 +29,9 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Idiomas",
-   "link_to": "Idioma",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Formaci\u00f3n",
-   "link_to": "Formacion",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Experiencia Laboral",
-   "link_to": "Experiencia Laboral",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Conocimiento",
-   "link_to": "Conocimiento",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
   }
  ],
- "modified": "2022-08-04 23:09:53.051523",
+ "modified": "2022-08-05 10:45:48.262627",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Datos Personales",
@@ -77,20 +41,20 @@
  "shortcuts": [
   {
    "doc_view": "List",
-   "label": "Datos generales",
+   "label": "Informaci\u00f3n general",
    "link_to": "Datos Generales",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Conocimiento",
+   "link_to": "Conocimiento",
    "type": "DocType"
   },
   {
    "doc_view": "List",
    "label": "Idiomas",
    "link_to": "Idioma",
-   "type": "DocType"
-  },
-  {
-   "doc_view": "List",
-   "label": "Formaci\u00f3n acad\u00e9mica",
-   "link_to": "Formacion",
    "type": "DocType"
   },
   {
@@ -101,10 +65,9 @@
   },
   {
    "doc_view": "List",
-   "label": "Conocimientos",
-   "link_to": "Conocimiento",
+   "label": "Formaci\u00f3n",
+   "link_to": "Formacion",
    "type": "DocType"
   }
- ],
- "shortcuts_label": "Informaci\u00f3n General"
+ ]
 }

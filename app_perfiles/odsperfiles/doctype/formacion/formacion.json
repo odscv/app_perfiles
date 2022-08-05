@@ -106,7 +106,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-04 09:46:59.667770",
+ "modified": "2022-08-05 10:50:33.435973",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Formacion",
@@ -125,7 +125,9 @@
    "write": 1
   }
  ],
+ "search_fields": "titulo, nivel_formativo",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "titulo",
  "track_changes": 1
 }

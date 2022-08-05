@@ -182,7 +182,7 @@
  "image_field": "foto_postulante",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-03 22:50:08.323126",
+ "modified": "2022-08-05 10:48:16.363060",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Datos Generales",
@@ -204,5 +204,6 @@
  "search_fields": "numero_id,nombrecompleto,ciudad",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "nombrecompleto",
  "track_changes": 1
 }

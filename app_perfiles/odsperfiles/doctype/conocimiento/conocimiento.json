@@ -104,7 +104,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-04 10:06:06.965253",
+ "modified": "2022-08-05 10:51:50.948150",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Conocimiento",
@@ -123,7 +123,9 @@
    "write": 1
   }
  ],
+ "search_fields": "titulo",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "titulo",
  "track_changes": 1
 }
