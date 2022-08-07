@@ -1,6 +1,7 @@
 from __future__ import print_function, unicode_literals
 
 from bs4 import BeautifulSoup
+from frappe.model.naming import make_autoname
 
 import frappe
 import frappe.defaults
@@ -106,6 +107,46 @@ def registro(nombres,apellidos,email, redirect_to):
 				role_profile_name='Postulaciones',
 				module_profile='ModulosPostulantes'
 				WHERE email = %(email)s """, values=values, as_dict=1)
+  
+		
+		
+		idDatosG=frappe.db.sql(""" SELECT tdg.name FROM `tabDatos Generales` tdg  ORDER BY tdg.name  DESC LIMIT 1 """)
+		#serieoption=frappe.db.sql(""" SELECT tdf.`options` FROM tabDocField tdf WHERE tdf.fieldname = 'naming_series' and tdf.parent = 'Datos Generales' """, as_dict=0)
+		name_datosg=""
+		if idDatosG:
+			(car,pos)=idDatosG[0][0].split('-')
+			x=int(pos)+1
+			if len(str(x)) == 1:
+				name_datosg=car + "-0000"+str(x)
+			if len(str(x)) == 2:
+				name_datosg=car + "-000"+str(x)
+			if len(str(x)) == 3:
+				name_datosg=car + "-00"+str(x)
+			if len(str(x)) == 4:
+				name_datosg=car + "-0"+str(x)
+			if len(str(x)) == 5:
+				name_datosg=car + "-" +str(x)
+		else:
+			name_datosg="POS-00001"
+		
+		nombrescompletos=escape_html(nombres)+' '+escape_html(apellidos)
+		valuesDatosG = {'name':name_datosg,'nombres':escape_html(nombres),'apellidos':escape_html(apellidos),'nombrecompleto':nombrescompletos,'email': email}
+		
+		#frappe.db.set_value('Datos Generales', name_datosg, {
+		#	'docstatus':0,
+		#	'idx':0,
+		#	'naming_series':"POS-",
+		#	'nombres': escape_html(nombres),
+		#	'apellidos': escape_html(apellidos),
+		#	'nombrecompleto':nombrescompletos,
+		#	'email':email
+		#})
+		frappe.db.sql(""" INSERT INTO `tabDatos Generales` (name,creation,modified,modified_by ,owner ,docstatus,idx,naming_series,nombres,apellidos, nombrecompleto, email) 
+                VALUES(%(name)s,NOW(),NOW(),'Administrator','Administrator',0,0,'POS-',%(nombres)s,%(apellidos)s,%(nombrecompleto)s,%(email)s)""", values=valuesDatosG, as_dict=1)
+		key = frappe.generate_hash()
+		valuesUserP={'name':key,'user':email,'for_value':name_datosg}
+		frappe.db.sql(""" INSERT INTO `tabUser Permission` (name,creation,modified ,modified_by,owner,docstatus,idx,`user`,allow,for_value,is_default,apply_to_all_doctypes)
+VALUES(%(name)s,NOW(),NOW(),'Administrator','Administrator',0,0,%(user)s,'Datos Generales',%(for_value)s,0,1) """,values=valuesUserP, as_dict=1)
 		#if redirect_to:
 		#    frappe.cache().hset("redirect_after_login", user.name, redirect_to)
 

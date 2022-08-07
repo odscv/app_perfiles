@@ -43,7 +43,6 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "N\u00famero de ID",
-   "reqd": 1,
    "unique": 1
   },
   {
@@ -69,8 +68,7 @@
   {
    "fieldname": "nacionalidad",
    "fieldtype": "Data",
-   "label": "Nacionalidad",
-   "reqd": 1
+   "label": "Nacionalidad"
   },
   {
    "fieldname": "fecha_nacimiento",
@@ -82,8 +80,7 @@
    "fieldname": "sexo",
    "fieldtype": "Select",
    "label": "Sexo",
-   "options": "Femenino\nMasculino",
-   "reqd": 1
+   "options": "Femenino\nMasculino"
   },
   {
    "fieldname": "estado_civil",
@@ -95,7 +92,8 @@
   {
    "fieldname": "num_dependientes",
    "fieldtype": "Int",
-   "label": "N\u00famero de dependientes"
+   "label": "N\u00famero de dependientes",
+   "reqd": 1
   },
   {
    "fieldname": "salto_columna1",
@@ -116,8 +114,7 @@
    "fieldname": "edad",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Edad",
-   "non_negative": 1
+   "label": "Edad"
   },
   {
    "default": "Tercer nivel",
@@ -125,35 +122,32 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Nivel formativo",
-   "options": "Doctorado\nCuarto nivel-posgrado\nTercer nivel\nBachiller",
-   "reqd": 1
+   "options": "Doctorado\nCuarto nivel-posgrado\nTercer nivel\nBachiller"
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "E-mail personal"
+   "label": "E-mail personal",
+   "reqd": 1
   },
   {
    "fieldname": "pais",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Seleccione un pa\u00eds",
-   "options": "Argentina\nBolivia\nBrasil\nChile\nColombia\nCosta Rica\nCuba\nEcuador\nEl Salvador\nGuayana Francesa\nGranada\nGuatemala\nGuayana\nHait\u00ed\nHonduras\nJamaica\nM\u00e9xico\nNicaragua\nParaguay\nPanam\u00e1\nPer\u00fa\nPuerto Rico\nRep\u00fablica Dominicana\nSurinam\nUruguay\nVenezuela",
-   "reqd": 1
+   "options": "Argentina\nBolivia\nBrasil\nChile\nColombia\nCosta Rica\nCuba\nEcuador\nEl Salvador\nGuayana Francesa\nGranada\nGuatemala\nGuayana\nHait\u00ed\nHonduras\nJamaica\nM\u00e9xico\nNicaragua\nParaguay\nPanam\u00e1\nPer\u00fa\nPuerto Rico\nRep\u00fablica Dominicana\nSurinam\nUruguay\nVenezuela"
   },
   {
    "fieldname": "ciudad",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Ciudad",
-   "reqd": 1
+   "label": "Ciudad"
   },
   {
    "fieldname": "direccion",
    "fieldtype": "Data",
-   "label": "Direcci\u00f3n",
-   "reqd": 1
+   "label": "Direcci\u00f3n"
   },
   {
    "fieldname": "telefono_movil",
@@ -182,7 +176,7 @@
  "image_field": "foto_postulante",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-05 10:48:16.363060",
+ "modified": "2022-08-07 11:31:14.739309",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Datos Generales",
