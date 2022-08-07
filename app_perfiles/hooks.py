@@ -11,6 +11,9 @@ app_license = "MIT"
 
 # Includes in <head>
 # ------------------
+on_session_creation = [
+	"app_perfiles.odsperfiles.doctype.datos_generales.datos_generales.setdatosg"
+]
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/app_perfiles/css/app_perfiles.css"
@@ -73,6 +76,14 @@ app_license = "MIT"
 # 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
 # }
 #
+permission_query_conditions = {
+	"Datos Generales": "app_perfiles.filtros.filtros.get_permission_query_conditions_datos_generales",	 
+	#"Liga": "kopa.filtros.filtros.get_permission_query_conditions_liga",
+	#"Jugador": "kopa.filtros.filtros.get_permission_query_conditions_jugador",
+	#"ClubJugadores": "kopa.filtros.filtros.get_permission_query_conditions_clubjugadores",
+	#"campeonato_categorias": "kopa.filtros.filtros.get_permission_query_conditions_campeonato_categorias",
+}
+
 # has_permission = {
 # 	"Event": "frappe.desk.doctype.event.event.has_permission",
 # }
