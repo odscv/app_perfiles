@@ -1,7 +1,7 @@
 {
  "category": "Modules",
  "charts": [],
- "creation": "2022-08-03 23:49:15.208929",
+ "creation": "2022-08-08 00:53:30.385900",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
  "docstatus": 0,
@@ -13,7 +13,7 @@
  "is_standard": 1,
  "label": "Postular",
  "links": [],
- "modified": "2022-08-03 23:49:15.208929",
+ "modified": "2022-08-08 00:53:30.385900",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Postular",
@@ -23,7 +23,7 @@
  "shortcuts": [
   {
    "doc_view": "List",
-   "label": "Postulaciones",
+   "label": "Postular a curso",
    "link_to": "Postulaciones",
    "type": "DocType"
   }

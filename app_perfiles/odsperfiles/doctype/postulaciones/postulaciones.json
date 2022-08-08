@@ -6,7 +6,13 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "encabezado_1",
+  "encabezado001",
+  "nombres_el",
+  "col001",
+  "encabezado002",
+  "id_participante",
+  "ciudad",
+  "secc0001",
   "naming_series",
   "codigocurso",
   "curso",
@@ -16,7 +22,8 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
-   "label": "C\u00f3digo de postulaciones"
+   "label": "C\u00f3digo de postulaciones",
+   "options": "POS-"
   },
   {
    "fieldname": "codigocurso",
@@ -25,7 +32,7 @@
    "options": "Curso"
   },
   {
-   "fetch_from": "curso.nombre_completo",
+   "fetch_from": "codigocurso.nombre_completo",
    "fieldname": "curso",
    "fieldtype": "Read Only",
    "label": "Curso"
@@ -35,14 +42,47 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "encabezado_1",
+   "fieldname": "encabezado001",
    "fieldtype": "Heading",
-   "label": "Datos del participante"
+   "label": "Datos del Participante"
+  },
+  {
+   "fetch_from": "id_participante.nombrecompleto",
+   "fieldname": "nombres_el",
+   "fieldtype": "Read Only",
+   "label": "Nombres"
+  },
+  {
+   "default": "\nDatos Generales",
+   "fieldname": "id_participante",
+   "fieldtype": "Link",
+   "label": "Id Participante",
+   "options": "Datos Generales"
+  },
+  {
+   "fetch_from": "id_participante.ciudad",
+   "fieldname": "ciudad",
+   "fieldtype": "Read Only",
+   "label": "Ciudad"
+  },
+  {
+   "fieldname": "encabezado002",
+   "fieldtype": "Heading",
+   "label": "."
+  },
+  {
+   "fieldname": "col001",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "secc0001",
+   "fieldtype": "Section Break",
+   "label": "Datos de Cursos"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-05 10:49:22.771122",
+ "modified": "2022-08-08 01:17:45.606029",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Postulaciones",

@@ -1,13 +1,13 @@
 {
  "actions": [],
- "autoname": "naming_series:codigo",
+ "autoname": "naming_series:",
  "creation": "2022-07-07 10:31:51.388976",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "encabezado_1",
-  "codigo",
+  "naming_series",
   "nombres_el",
   "column_break_1",
   "encabezado_2",
@@ -27,12 +27,6 @@
   "descripcion"
  ],
  "fields": [
-  {
-   "fieldname": "codigo",
-   "fieldtype": "Select",
-   "label": "C\u00f3digo de la experiencia",
-   "options": "EXP-"
-  },
   {
    "fieldname": "tipo",
    "fieldtype": "Select",
@@ -80,7 +74,7 @@
   },
   {
    "fieldname": "meses",
-   "fieldtype": "Int",
+   "fieldtype": "Read Only",
    "in_list_view": 1,
    "label": "Experiencia en meses"
   },
@@ -137,11 +131,17 @@
   {
    "fieldname": "column_break_15",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "C\u00f3digo de la experiencia",
+   "options": "EXP-"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-05 10:51:22.379935",
+ "modified": "2022-08-08 00:42:45.731948",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Experiencia Laboral",
