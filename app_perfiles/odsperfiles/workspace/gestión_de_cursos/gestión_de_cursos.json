@@ -1,7 +1,7 @@
 {
  "category": "Modules",
  "charts": [],
- "creation": "2022-08-08 08:17:02.677970",
+ "creation": "2022-08-08 15:02:04.076839",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
  "docstatus": 0,
@@ -11,20 +11,32 @@
  "idx": 0,
  "is_default": 0,
  "is_standard": 1,
- "label": "Postular",
+ "label": "Gesti\u00f3n de Cursos",
  "links": [],
- "modified": "2022-08-08 08:17:02.677970",
+ "modified": "2022-08-08 15:02:04.076839",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
- "name": "Postular",
+ "name": "Gesti\u00f3n de Cursos",
  "owner": "Administrator",
  "pin_to_bottom": 0,
  "pin_to_top": 0,
  "shortcuts": [
   {
    "doc_view": "List",
-   "label": "Postular a curso",
-   "link_to": "Postulaciones",
+   "label": "Categor\u00eda",
+   "link_to": "Categoria",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Oficina",
+   "link_to": "Oficina",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Curso",
+   "link_to": "Curso",
    "type": "DocType"
   }
  ]

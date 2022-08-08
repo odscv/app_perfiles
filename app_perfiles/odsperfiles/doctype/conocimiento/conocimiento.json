@@ -70,6 +70,9 @@
    "fetch_from": "numero_id_co.nombrecompleto",
    "fieldname": "nombres_co",
    "fieldtype": "Read Only",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Nombres"
   },
   {
@@ -88,7 +91,7 @@
    "options": "Datos Generales"
   },
   {
-   "fetch_from": "numero_id_co.nombrecompleto",
+   "fetch_from": "numero_id_co.ciudad",
    "fieldname": "ciudad_id",
    "fieldtype": "Read Only",
    "label": "Ciudad"
@@ -104,7 +107,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-05 10:51:50.948150",
+ "modified": "2022-08-08 15:30:25.929239",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Conocimiento",

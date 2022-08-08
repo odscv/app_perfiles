@@ -16,7 +16,16 @@
   "naming_series",
   "codigocurso",
   "curso",
-  "sec001"
+  "sec001",
+  "fase1",
+  "puntaje_eval",
+  "col002",
+  "fase2",
+  "puntaje_ent",
+  "tecnico",
+  "col003",
+  "puntaje_total",
+  "resultado"
  ],
  "fields": [
   {
@@ -39,7 +48,8 @@
   },
   {
    "fieldname": "sec001",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Aprobaciones"
   },
   {
    "fieldname": "encabezado001",
@@ -78,11 +88,58 @@
    "fieldname": "secc0001",
    "fieldtype": "Section Break",
    "label": "Datos de Cursos"
+  },
+  {
+   "default": "0",
+   "fieldname": "fase1",
+   "fieldtype": "Check",
+   "label": "Fase I"
+  },
+  {
+   "fieldname": "tecnico",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Tecnico"
+  },
+  {
+   "fieldname": "col002",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "puntaje_eval",
+   "fieldtype": "Int",
+   "label": "Puntaje Evaluaciones"
+  },
+  {
+   "default": "0",
+   "fieldname": "fase2",
+   "fieldtype": "Check",
+   "label": "Fase II"
+  },
+  {
+   "fieldname": "puntaje_ent",
+   "fieldtype": "Int",
+   "label": "Puntaje Entrevista"
+  },
+  {
+   "fieldname": "col003",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "resultado",
+   "fieldtype": "Select",
+   "label": "Resultado",
+   "options": "Aprobado(a)\nNo Aprobado(a)"
+  },
+  {
+   "fieldname": "puntaje_total",
+   "fieldtype": "Read Only",
+   "label": "Puntaje total"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-08 01:17:45.606029",
+ "modified": "2022-08-08 16:10:45.525872",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Postulaciones",
