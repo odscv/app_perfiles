@@ -12,6 +12,7 @@ app_license = "MIT"
 # Includes in <head>
 # ------------------
 on_session_creation = [
+	"app_perfiles.odsperfiles.doctype.postulaciones.postulaciones.setdatosg"
 	"app_perfiles.odsperfiles.doctype.datos_generales.datos_generales.setdatosg"
 ]
 

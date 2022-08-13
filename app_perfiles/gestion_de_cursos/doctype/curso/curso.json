@@ -8,7 +8,7 @@
  "field_order": [
   "naming_series",
   "nombre_completo",
-  "metodolog\u00eda",
+  "metodologia",
   "categorias",
   "nombre_categoria",
   "oficinas",
@@ -18,7 +18,10 @@
   "descripcion",
   "visibilidad",
   "column_break_10",
-  "requisitos"
+  "requisitos",
+  "secc000001",
+  "puntaje_min_evaluacion",
+  "puntaje_min_entrevista"
  ],
  "fields": [
   {
@@ -32,14 +35,6 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Nombre completo del curso",
-   "reqd": 1
-  },
-  {
-   "fieldname": "metodolog\u00eda",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Metodolog\u00eda",
-   "options": "EM - #EnMarcha\nEMD - #EnMarchaDigital\nICSN - Iniciando con su Negocio\nCCSN - Creciendo con su Negocio\nMDP - Desarrollo de Proveedores\nNo aplica",
    "reqd": 1
   },
   {
@@ -104,11 +99,34 @@
    "fieldname": "requisitos",
    "fieldtype": "Text Editor",
    "label": "Requisitos para postular"
+  },
+  {
+   "fieldname": "puntaje_min_evaluacion",
+   "fieldtype": "Int",
+   "label": "Puntaje Min Evaluacion"
+  },
+  {
+   "fieldname": "puntaje_min_entrevista",
+   "fieldtype": "Int",
+   "label": "Puntaje Min Entrevista"
+  },
+  {
+   "fieldname": "secc000001",
+   "fieldtype": "Section Break",
+   "label": "Puntaje Minimo"
+  },
+  {
+   "fieldname": "metodologia",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Metodolog\u00eda",
+   "options": "EM - #EnMarcha\nEMD - #EnMarchaDigital\nICSN - Iniciando con su Negocio\nCCSN - Creciendo con su Negocio\nMDP - Desarrollo de Proveedores\nNo aplica",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-08 15:32:00.424349",
+ "modified": "2022-08-12 17:41:38.975395",
  "modified_by": "Administrator",
  "module": "GESTION DE CURSOS",
  "name": "Curso",

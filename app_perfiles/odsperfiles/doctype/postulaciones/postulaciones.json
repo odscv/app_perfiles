@@ -93,13 +93,15 @@
    "default": "0",
    "fieldname": "fase1",
    "fieldtype": "Check",
-   "label": "Fase I"
+   "label": "Fase I",
+   "read_only": 1
   },
   {
    "fieldname": "tecnico",
    "fieldtype": "Data",
    "in_standard_filter": 1,
-   "label": "Tecnico"
+   "label": "Tecnico",
+   "read_only": 1
   },
   {
    "fieldname": "col002",
@@ -108,18 +110,21 @@
   {
    "fieldname": "puntaje_eval",
    "fieldtype": "Int",
-   "label": "Puntaje Evaluaciones"
+   "label": "Puntaje Evaluaciones",
+   "read_only": 1
   },
   {
    "default": "0",
    "fieldname": "fase2",
    "fieldtype": "Check",
-   "label": "Fase II"
+   "label": "Fase II",
+   "read_only": 1
   },
   {
    "fieldname": "puntaje_ent",
    "fieldtype": "Int",
-   "label": "Puntaje Entrevista"
+   "label": "Puntaje Entrevista",
+   "read_only": 1
   },
   {
    "fieldname": "col003",
@@ -129,17 +134,19 @@
    "fieldname": "resultado",
    "fieldtype": "Select",
    "label": "Resultado",
-   "options": "Aprobado(a)\nNo Aprobado(a)"
+   "options": "Aprobado(a)\nNo Aprobado(a)",
+   "read_only": 1
   },
   {
    "fieldname": "puntaje_total",
    "fieldtype": "Read Only",
-   "label": "Puntaje total"
+   "label": "Puntaje total",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-08 16:10:45.525872",
+ "modified": "2022-08-12 15:47:15.641927",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Postulaciones",
@@ -154,6 +161,28 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TECNICO",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Postulante",
    "share": 1,
    "write": 1
   }

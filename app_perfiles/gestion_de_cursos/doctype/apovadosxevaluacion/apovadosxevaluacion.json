@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-08-08 22:12:30.865894",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "id_participante",
+  "nombres_el",
+  "codigocurso",
+  "curso"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Codigo",
+   "options": "AXE-"
+  },
+  {
+   "fieldname": "codigocurso",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Codigo curso",
+   "options": "Curso"
+  },
+  {
+   "fetch_from": "codigocurso.nombre_completo",
+   "fieldname": "curso",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Curso"
+  },
+  {
+   "fieldname": "id_participante",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Codigo Postulante",
+   "options": "Datos Generales"
+  },
+  {
+   "fetch_from": "codigo_postulante.nombres_el",
+   "fieldname": "nombres_el",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Postulante"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-08 22:29:33.602195",
+ "modified_by": "Administrator",
+ "module": "GESTION DE CURSOS",
+ "name": "ApovadosXEvaluacion",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -285,3 +285,8 @@ def reset_user_data(user):
 	user_doc.save(ignore_permissions=True)
 
 	return user_doc, redirect_url
+
+@frappe.whitelist()
+def get_puntaje_min(codigo):
+    values = {'name': codigo}
+    return frappe.db.sql(""" SELECT tc.puntaje_min_evaluacion,tc.puntaje_min_entrevista  FROM tabCurso tc WHERE tc.name =%(name)s """, values=values, as_dict=1)

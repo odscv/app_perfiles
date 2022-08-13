@@ -114,7 +114,8 @@
    "fieldname": "edad",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Edad"
+   "label": "Edad",
+   "read_only": 1
   },
   {
    "default": "Tercer nivel",
@@ -176,7 +177,7 @@
  "image_field": "foto_postulante",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-07 11:31:14.739309",
+ "modified": "2022-08-12 21:13:58.985033",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Datos Generales",
