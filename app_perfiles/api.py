@@ -210,7 +210,7 @@ def update_password(new_password, logout_all_sessions=0, key=None, old_password=
 	values = {'user': user}
 	frappe.db.sql(""" UPDATE tabUser 
 				set user_type ='System User',
-				owner='Guest',
+				owner="Administrator",
 				role_profile_name='Postulaciones',
 				module_profile='ModulosPostulantes'
 				WHERE email = %(user)s """, values=values, as_dict=1)

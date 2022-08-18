@@ -117,16 +117,16 @@
   },
   {
    "fieldname": "metodologia",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Metodolog\u00eda",
-   "options": "EM - #EnMarcha\nEMD - #EnMarchaDigital\nICSN - Iniciando con su Negocio\nCCSN - Creciendo con su Negocio\nMDP - Desarrollo de Proveedores\nNo aplica",
+   "options": "Logos",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-12 17:41:38.975395",
+ "modified": "2022-08-17 12:41:11.714288",
  "modified_by": "Administrator",
  "module": "GESTION DE CURSOS",
  "name": "Curso",

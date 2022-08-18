@@ -21,7 +21,6 @@
   "num_dependientes",
   "salto_columna1",
   "encabezado_2",
-  "ver_foto",
   "foto_postulante",
   "email",
   "telefono_movil",
@@ -100,15 +99,9 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "ver_foto",
-   "fieldtype": "Image",
-   "label": "Fotograf\u00eda"
-  },
-  {
    "fieldname": "foto_postulante",
    "fieldtype": "Attach Image",
-   "label": "Adjuntar fotograf\u00eda",
-   "reqd": 1
+   "label": "Adjuntar fotograf\u00eda"
   },
   {
    "fieldname": "edad",
@@ -177,7 +170,7 @@
  "image_field": "foto_postulante",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-12 21:13:58.985033",
+ "modified": "2022-08-17 00:56:26.383782",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Datos Generales",
@@ -192,6 +185,29 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "TECNICO",
+   "select": 1,
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Postulante",
+   "select": 1,
    "share": 1,
    "write": 1
   }

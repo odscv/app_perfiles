@@ -7,18 +7,15 @@ frappe.ui.form.on('Postulaciones', {
 		if(frappe.user.has_role("Administrador Postulaciones")){
             frm.set_df_property("fase1", "read_only", 1);
             frm.set_df_property("puntaje_eval", "read_only", 0);
-            console.log(frappe.user.has_role("Administrador Postulaciones"));
             /*if(frm.doc.aprobado==1){
                 frm.set_df_property("direccion", "read_only", 1);
                 frm.set_df_property("copia_cedula", "read_only", 1);
                 frm.set_df_property("carnet_vacunacion", "read_only", 1);
             }*/
 	    }
-        console.log(frappe.user.has_role("TECNICO"));
 		if(frappe.user.has_role("TECNICO")){
             frm.set_df_property("fase2", "read_only", 1);
             frm.set_df_property("puntaje_ent", "read_only", 0);
-            console.log(frappe.user.has_role("Tecnicos"));
             /*if(frm.doc.aprobado==1){
                 frm.set_df_property("direccion", "read_only", 1);
                 frm.set_df_property("copia_cedula", "read_only", 1);
@@ -30,8 +27,7 @@ frappe.ui.form.on('Postulaciones', {
             frm.set_df_property("puntaje_ent", "read_only", 1);
             frm.set_df_property("fase1", "read_only", 1);
             frm.set_df_property("puntaje_eval", "read_only", 1);
-			if(frm.doc.putaje_ent)
-            console.log(frm.doc.fase1);
+			
             /*if(frm.doc.aprobado==1){
                 frm.set_df_property("direccion", "read_only", 1);
                 frm.set_df_property("copia_cedula", "read_only", 1);
@@ -53,6 +49,14 @@ frappe.ui.form.on('Postulaciones', {
             }else{
                 cur_frm.set_value("fase1", 0);
             }
+            if(frm.doc.fase1 && frm.doc.fase2){
+                
+                cur_frm.set_value("resultado", "Aprobado(a)");
+            }else{
+                cur_frm.set_value("resultado", "No Aprobado(a)");
+            }
+            let suma_puntaje = frm.doc.puntaje_ent + frm.doc.puntaje_eval;
+            cur_frm.set_value("puntaje_total", suma_puntaje);
             cur_frm.refresh_field();
         });
 	},
@@ -65,13 +69,22 @@ frappe.ui.form.on('Postulaciones', {
                 "codigo": frm.doc.codigocurso,
             }
         }).done((cal)=>{
+            console.log(cal.message[0].puntaje_min_entrevista);
             if(frm.doc.puntaje_ent>=cal.message[0].puntaje_min_entrevista){
                 cur_frm.set_value("fase2", 1);
-                let suma_puntaje = frm.doc.puntaje_ent + frm.doc.puntaje_eval;
-                cur_frm.set_value("puntaje_total", suma_puntaje);
             }else{
                 cur_frm.set_value("fase2", 0);
             }
+            if(frm.doc.fase1 && frm.doc.fase2){
+                
+                cur_frm.set_value("resultado", "Aprobado(a)");
+            }else{
+                cur_frm.set_value("resultado", "No Aprobado(a)");
+            }
+            
+                //cur_frm.set_value("resultado", "Reprobado");
+            let suma_puntaje = frm.doc.puntaje_ent + frm.doc.puntaje_eval;
+            cur_frm.set_value("puntaje_total", suma_puntaje);
             cur_frm.refresh_field();
         });
 	},

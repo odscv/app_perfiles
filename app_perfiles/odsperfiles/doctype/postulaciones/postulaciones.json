@@ -44,6 +44,8 @@
    "fetch_from": "codigocurso.nombre_completo",
    "fieldname": "curso",
    "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Curso"
   },
   {
@@ -60,6 +62,8 @@
    "fetch_from": "id_participante.nombrecompleto",
    "fieldname": "nombres_el",
    "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Nombres"
   },
   {
@@ -134,19 +138,21 @@
    "fieldname": "resultado",
    "fieldtype": "Select",
    "label": "Resultado",
-   "options": "Aprobado(a)\nNo Aprobado(a)",
+   "options": "\nAprobado(a)\nNo Aprobado(a)",
    "read_only": 1
   },
   {
+   "default": "0",
    "fieldname": "puntaje_total",
    "fieldtype": "Read Only",
+   "in_list_view": 1,
    "label": "Puntaje total",
    "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-12 15:47:15.641927",
+ "modified": "2022-08-17 22:15:53.212779",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Postulaciones",
