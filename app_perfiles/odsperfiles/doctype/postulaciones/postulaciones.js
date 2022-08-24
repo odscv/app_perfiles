@@ -7,33 +7,25 @@ frappe.ui.form.on('Postulaciones', {
 		if(frappe.user.has_role("Administrador Postulaciones")){
             frm.set_df_property("fase1", "read_only", 1);
             frm.set_df_property("puntaje_eval", "read_only", 0);
-            /*if(frm.doc.aprobado==1){
-                frm.set_df_property("direccion", "read_only", 1);
-                frm.set_df_property("copia_cedula", "read_only", 1);
-                frm.set_df_property("carnet_vacunacion", "read_only", 1);
-            }*/
+            frm.set_df_property("fase2", "read_only", 1);
+            
+            
 	    }
 		if(frappe.user.has_role("TECNICO")){
             frm.set_df_property("fase2", "read_only", 1);
+            frm.set_df_property("id_participante", "read_only", 1);
+            frm.set_df_property("codigocurso", "read_only", 1);
             frm.set_df_property("puntaje_ent", "read_only", 0);
-            /*if(frm.doc.aprobado==1){
-                frm.set_df_property("direccion", "read_only", 1);
-                frm.set_df_property("copia_cedula", "read_only", 1);
-                frm.set_df_property("carnet_vacunacion", "read_only", 1);
-            }*/
 	    }
-        if(frappe.user.has_role("Postulaciones")){
+        if(frappe.user.has_role("Postulante")){
             frm.set_df_property("fase2", "read_only", 1);
-            frm.set_df_property("puntaje_ent", "read_only", 1);
+            frm.set_df_property("puntaje_ent", "hidden", 1);
             frm.set_df_property("fase1", "read_only", 1);
-            frm.set_df_property("puntaje_eval", "read_only", 1);
-			
-            /*if(frm.doc.aprobado==1){
-                frm.set_df_property("direccion", "read_only", 1);
-                frm.set_df_property("copia_cedula", "read_only", 1);
-                frm.set_df_property("carnet_vacunacion", "read_only", 1);
-            }*/
+            frm.set_df_property("puntaje_eval", "hidden", 1);
+            frm.set_df_property("puntaje_total", "read_only", 1);
+            frm.set_df_property("puntaje_total", "hidden", 1);
 	    }
+        cur_frm.refresh_field();
 	},
     puntaje_eval(frm) {
 

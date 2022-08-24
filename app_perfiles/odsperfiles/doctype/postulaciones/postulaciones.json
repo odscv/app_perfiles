@@ -25,6 +25,7 @@
   "tecnico",
   "col003",
   "puntaje_total",
+  "col00023",
   "resultado"
  ],
  "fields": [
@@ -148,11 +149,15 @@
    "in_list_view": 1,
    "label": "Puntaje total",
    "read_only": 1
+  },
+  {
+   "fieldname": "col00023",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-24 12:46:43.892984",
+ "modified": "2022-08-24 17:13:12.876124",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Postulaciones",

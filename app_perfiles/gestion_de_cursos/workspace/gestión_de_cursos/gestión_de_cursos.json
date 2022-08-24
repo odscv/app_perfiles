@@ -13,7 +13,7 @@
  "is_standard": 1,
  "label": "Gesti\u00f3n de Cursos",
  "links": [],
- "modified": "2022-08-08 15:09:48.999153",
+ "modified": "2022-08-24 13:24:46.318937",
  "modified_by": "Administrator",
  "module": "GESTION DE CURSOS",
  "name": "Gesti\u00f3n de Cursos",
@@ -37,6 +37,12 @@
    "doc_view": "List",
    "label": "Curso",
    "link_to": "Curso",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Asignar Curso-T\u00e9cnico",
+   "link_to": "AsignarCursoTecnico",
    "type": "DocType"
   }
  ]
