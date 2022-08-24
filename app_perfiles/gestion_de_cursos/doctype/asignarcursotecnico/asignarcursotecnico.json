@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-08-24 12:41:07.504640",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "curso",
+  "nombre_curso",
+  "tecnico",
+  "nombre_tecnico"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Codigo",
+   "options": "CUR-TEC-"
+  },
+  {
+   "fieldname": "curso",
+   "fieldtype": "Link",
+   "label": "Curso",
+   "options": "Curso"
+  },
+  {
+   "fetch_from": "curso.nombre_completo",
+   "fieldname": "nombre_curso",
+   "fieldtype": "Read Only",
+   "label": "Nombre curso"
+  },
+  {
+   "fieldname": "tecnico",
+   "fieldtype": "Link",
+   "label": "Tecnico",
+   "options": "User"
+  },
+  {
+   "fetch_from": "tecnico.full_name",
+   "fieldname": "nombre_tecnico",
+   "fieldtype": "Read Only",
+   "label": "Nombre tecnico"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-24 12:56:35.577713",
+ "modified_by": "Administrator",
+ "module": "GESTION DE CURSOS",
+ "name": "AsignarCursoTecnico",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "nombre_curso",
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
