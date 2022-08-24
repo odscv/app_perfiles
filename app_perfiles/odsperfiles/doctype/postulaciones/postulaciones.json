@@ -38,10 +38,10 @@
    "fieldname": "codigocurso",
    "fieldtype": "Link",
    "label": "C\u00f3digo del curso",
-   "options": "Curso"
+   "options": "AsignarCursoTecnico"
   },
   {
-   "fetch_from": "codigocurso.nombre_completo",
+   "fetch_from": "codigocurso.nombre_curso",
    "fieldname": "curso",
    "fieldtype": "Read Only",
    "in_list_view": 1,
@@ -152,7 +152,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-17 22:15:53.212779",
+ "modified": "2022-08-24 12:46:43.892984",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Postulaciones",
