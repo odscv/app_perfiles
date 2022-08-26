@@ -31,7 +31,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-08-05 10:45:48.262627",
+ "modified": "2022-08-24 23:10:49.439783",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Datos Personales",
@@ -69,5 +69,6 @@
    "link_to": "Formacion",
    "type": "DocType"
   }
- ]
+ ],
+ "shortcuts_label": "Accesos directos"
 }

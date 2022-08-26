@@ -22,8 +22,8 @@ frappe.ui.form.on('Postulaciones', {
             frm.set_df_property("puntaje_ent", "hidden", 1);
             frm.set_df_property("fase1", "read_only", 1);
             frm.set_df_property("puntaje_eval", "hidden", 1);
-            frm.set_df_property("puntaje_total", "read_only", 1);
-            frm.set_df_property("puntaje_total", "hidden", 1);
+            frm.set_df_property("puntaje_total", "read_only", 0);
+            frm.set_df_property("puntaje_total", "hidden", 0);
 	    }
         cur_frm.refresh_field();
 	},
