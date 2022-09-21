@@ -47,7 +47,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-24 12:56:35.577713",
+ "modified": "2022-09-21 16:17:30.815123",
  "modified_by": "Administrator",
  "module": "GESTION DE CURSOS",
  "name": "AsignarCursoTecnico",
@@ -66,7 +66,7 @@
    "write": 1
   }
  ],
- "search_fields": "nombre_curso",
+ "search_fields": "nombre_curso,nombre_tecnico",
  "sort_field": "modified",
  "sort_order": "DESC"
 }

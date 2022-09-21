@@ -1,13 +1,21 @@
 from . import __version__ as app_version
 
 app_name = "app_perfiles"
-app_title = "Perfiles ODSCV"
+app_title = "Perfiles ODSCV - PNUD"
 app_publisher = "Carolina Fonseca"
 app_description = "Aplicacion para administrar postulaciones ."
 app_icon = "octicon octicon-file-directory"
 app_color = "blue"
-app_email = "caro-fonseca@outlook.com"
+app_email = "carolina.fonseca@undp.org"
 app_license = "MIT"
+app_logo_url = "/assets/ODS CDV-01.png"
+
+
+# Includes in <head>
+# ------------------
+website_context = {
+"splash_image": "/assets/ODS CDV-01.png"
+}
 
 # Includes in <head>
 # ------------------
