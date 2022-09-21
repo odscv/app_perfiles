@@ -1,7 +1,7 @@
 {
  "category": "Modules",
  "charts": [],
- "creation": "2022-09-21 12:48:58.166335",
+ "creation": "2022-09-11 00:57:35.578486",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
  "docstatus": 0,
@@ -11,19 +11,19 @@
  "idx": 0,
  "is_default": 0,
  "is_standard": 1,
- "label": "Postular a Curso",
+ "label": "Lista de postulaciones",
  "links": [],
- "modified": "2022-09-21 12:48:58.166335",
+ "modified": "2022-09-11 00:57:35.578486",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
- "name": "Postular a Curso",
+ "name": "Lista de postulaciones",
  "owner": "Administrator",
  "pin_to_bottom": 0,
  "pin_to_top": 0,
  "shortcuts": [
   {
    "doc_view": "List",
-   "label": " Postular a curso",
+   "label": "Lista de postulaciones",
    "link_to": "Postulaciones",
    "type": "DocType"
   }
