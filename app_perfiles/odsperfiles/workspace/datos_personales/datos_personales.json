@@ -12,26 +12,8 @@
  "is_default": 0,
  "is_standard": 1,
  "label": "Datos Personales",
- "links": [
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Informaci\u00f3n General",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Datos Personales",
-   "link_to": "Datos Generales",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  }
- ],
- "modified": "2022-08-24 23:10:49.439783",
+ "links": [],
+ "modified": "2022-09-21 21:34:08.946513",
  "modified_by": "Administrator",
  "module": "ODSPerfiles",
  "name": "Datos Personales",
